@@ -30,7 +30,7 @@ def main():
 		st.download_button("Download Applicant details template", template_file, "applicants_details_template.csv", key='download-csv')		
 	
 	with open("applicants_details_template.csv") as template_file:
-		temp_df=pd.DataFrame(template_file)
+		temp_df=pd.read_csv(template_file)
 		required_fields=temp_df.columns.values.tolist()
 
 	st.markdown(html_uploader,unsafe_allow_html=True)
@@ -40,7 +40,7 @@ def main():
 		query = df_size_optimizer(pd.read_csv(uploaded_file))
 		col_names=query.columns.values.tolist()
 		if col_names==required_fields:
-			query_prediction = inference(query)
+			query_prediction = predictor(query)
 			query_pred=pd.DataFrame(query_prediction)
 			query_pred.columns = ['Applicant ID', 'Defaulting Tendency']
 			st.dataframe(query_pred)
