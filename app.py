@@ -27,9 +27,11 @@ def main():
 	st.markdown(html_template,unsafe_allow_html=True)
 
 	with open("applicants_details_template.csv") as template_file:
+		st.download_button("Download Applicant details template", template_file, "applicants_details_template.csv", key='download-csv')		
+	
+	with open("applicants_details_template.csv") as template_file:
 		temp_df=pd.DataFrame(template_file)
 		required_fields=temp_df.columns.values.tolist()
-		st.download_button("Download Applicant details template", template_file, "applicants_details_template.csv", key='download-csv')	
 
 	st.markdown(html_uploader,unsafe_allow_html=True)
 	uploaded_file = st.file_uploader("Upload a CSV file only",['csv'])    
