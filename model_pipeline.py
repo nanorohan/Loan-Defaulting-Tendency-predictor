@@ -6,7 +6,7 @@ from data_loader import (df_size_optimizer, bureau_numerical_merge, bureau_categ
 previous_categorical_merge, model, imputer, scaler, imputer_constant, ohe)
 
 #Define a function to create a pipeline for prediction
-def inference(query):
+def predictor(query):
 	#Add columns titled DEBT_INCOME_RATIO to application_train
 	query_int=query.copy();
 	query_int['DEBT_INCOME_RATIO'] = query['AMT_ANNUITY']/query['AMT_INCOME_TOTAL']
