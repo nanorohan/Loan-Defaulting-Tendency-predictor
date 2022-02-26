@@ -1,8 +1,15 @@
-# Loan Defaulting Tendency predictor
-An end-to-end binary classification model based on the Home Credit Default Risk competition dataset hosted on Kaggle
+# <p align="center">Loan Defaulting Tendency predictor</p>
+<p align="center">An end-to-end binary classification model based on the Home Credit Default Risk competition dataset hosted on Kaggle</p>
 
-[💸Streamlit App](https://share.streamlit.io/nelsonchris1/ml-explainability-app/main/app.py)
+Click [💸here](https://share.streamlit.io/nelsonchris1/ml-explainability-app/main/app.py) for using the app. The app is built using [Streamlit](https://streamlit.io/) and hosted on [Heroku](https://dashboard.heroku.com/).
 
+
+## ✅ Using the predictor app
+* Click on the link above and wait for the app to load.
+* Upload the Home Credit applicant details by clicking on the upload button.
+* In case of mismatch, use the template file provided and fill in the details in the template file.
+* After successful upload, please wait a while while the model computes the tendencies.
+* The results shall be displayed on screen and you can download the predictions appended to query data as a csv file. 
 
 
 ## ✅ Description
@@ -14,7 +21,6 @@ An objective model helps the lending agencies disburse prudent loans. This syste
 <b>Loan Defaulter Predictor</b> helps you identify potential defaulters.
 Given a loan application of a potential or existing client at Home Credit, this app predicts whether the client will be able to repay the loan or not.
 Applicants deemed capable of repaying the loan shall be labelled <b>Low</b> under defaulting tendency and those deemed as incapable shall be labelled as <b>High</b>. 
-
 
 
 ## ✅ Python Libraries used
@@ -35,7 +41,6 @@ Applicants deemed capable of repaying the loan shall be labelled <b>Low</b> unde
 | Numpy | *A Python library for numerical computation*|
 
 
-
 ## ✅ High-level summary
 * The dataset for training and testing the model is sourced from Kaggle's [Home Credit Default Risk competition](https://www.kaggle.com/c/home-credit-default-risk).<br>
 * This is a binary classification [defaulter or not] with imbalanced data [defaulters are approximately 8% of total sample population].<br>
@@ -46,7 +51,6 @@ Applicants deemed capable of repaying the loan shall be labelled <b>Low</b> unde
 * All required pre-processing such as imputation, standardization, encoding, etc. is carried out .<br>
 * With train-test split done, through PyCaret, a number of models are evaluated and best model is selected.<br> 
 * The best model and entire dataflow pipeline is created using sklearn and the process is deployed on Heroku using Streamlit.<br>
-
 
 
 ## ✅ If you want to use/improve upon this app
