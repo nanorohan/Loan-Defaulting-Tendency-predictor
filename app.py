@@ -4,7 +4,7 @@ import csv
 import numpy as np
 import pickle
 from data_loader import df_size_optimizer
-from model_pipeline import inference, convert_df
+from model_pipeline import predictor, convert_df
 from app_elements import app_intro, overview_desc, html_template, html_uploader, html_file_dl
 import streamlit as st
 import base64
