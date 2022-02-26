@@ -1,7 +1,7 @@
 # <p align="center">Loan Defaulting Tendency predictor</p>
 <p align="center">An end-to-end binary classification model based on the Home Credit Default Risk competition dataset hosted on Kaggle</p>
 
-Click [💸here](https://share.streamlit.io/nelsonchris1/ml-explainability-app/main/app.py) for using the app. The app is built using [Streamlit](https://streamlit.io/) and hosted on [Heroku](https://dashboard.heroku.com/).
+Click [💸here](https://loan-def-predict.herokuapp.com/) for using the app. The app is built using [Streamlit](https://streamlit.io/) and hosted on [Heroku](https://dashboard.heroku.com/).
 
 
 ## ✅ Using the predictor app
