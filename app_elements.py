@@ -43,7 +43,7 @@ overview_desc = f"""
       <p style="color:#8B0000; text-align: justify; line-height: 1.35;font-size: 23px; font-family:Playfair;">
       This app is powered by Machine Learning! It uses a 
       <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingClassifier.html">Gradient Boosting Classifier model from SKlearn library</a>
-      () trained on Kaggle's <a href="https://www.kaggle.com/c/home-credit-default-risk/overview">Home Credit Default Risk dataset</a>. 
+      trained on Kaggle's <a href="https://www.kaggle.com/c/home-credit-default-risk/overview">Home Credit Default Risk dataset</a>. 
       I have used Streamlit & deployed this app on Heroku.
       A complete repository of this app right from data preprocessing upto the deployment can be viewed on my <a href="https://github.com/nanorohan">GitHub page</a>.
       Feedback and ideas may be directed <a href="mailto:nanorohan@gmail.com">here</a>.
